@@ -63,7 +63,7 @@ namespace TwitchChatBot
                     if (WordFilter(code))
                     {
                         LatestCodeBox.Text = _code;
-                        CodeTextBox.AppendText(Environment.NewLine + _code);
+                        CodeTextBox.AppendText(_code + Environment.NewLine);
                         if (AutoCopy && !PanelHidden)
                             Clipboard.SetText(_code);
                         if (PlaySound && !PanelHidden)
